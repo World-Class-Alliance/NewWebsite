@@ -35,7 +35,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
   --border-radius-large:          100px;
   --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-small:          11px;
 
   --font-weight-normal:           400;
   --font-weight-medium:           500;
@@ -46,7 +46,10 @@ body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
 }
-
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsla(220, 100%, 50%, 80%);
+}
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -480,7 +483,7 @@ strong {
 
 .navbar-brand-text small {
   display: block;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1;
   text-transform: uppercase;
 }
