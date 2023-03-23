@@ -23,19 +23,20 @@
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
 	    
 	    <style>
-		    .skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-		    .skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
+		.skip-to-main-content-link {
+  			position: absolute;
+  			left: -9999px;
+  			z-index: 999;
+ 			padding: 1em;
+  			background-color: black;
+  			color: white;
+  			opacity: 0;
+		}
+		.skip-to-main-content-link:focus {
+  			left: 50%;
+  			transform: translateX(-50%);
+  			opacity: 1;
+		}
 	    </style>
         
 <!--
@@ -48,9 +49,7 @@ https://templatemo.com/tm-587-tiya-golf-club
     </head>
     
     <body>
-<a class="skip" href="#main">
-  Skip to content
-</a>
+<a href="#main" class="skip-to-main-content-link">Skip to main content</a>
         <main>
 
             <nav class="navbar navbar-expand-lg">                
@@ -341,6 +340,6 @@ https://templatemo.com/tm-587-tiya-golf-club
         <script src="js/animated-headline.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
-
+</main>
     </body>
 </html>
