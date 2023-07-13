@@ -1,0 +1,48 @@
+{
+  "id": "did:web:thewca.us",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:thewca.us"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://thewca.us/"
+        ]
+      }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/fd295a5f-fd39-448c-bcd4-f2e43993ee76"
+        ]
+      }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#d77299e46e4b468490fb5fa77f38583bvcSigningKey-f1c9a",
+      "controller": "did:web:thewca.us",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "publicKeyJwk": {
+        "crv": "secp256k1",
+        "kty": "EC",
+        "x": "9jZy8T0CPLts7RlAd8D07sPfjvfNjhRvVqZoG3mJ918",
+        "y": "85j_rZNE8iQvICnesVgKEWTzrUmtU_O1_dQENDcDeAU"
+      }
+    }
+  ],
+  "authentication": [
+    "#d77299e46e4b468490fb5fa77f38583bvcSigningKey-f1c9a"
+  ],
+  "assertionMethod": [
+    "#d77299e46e4b468490fb5fa77f38583bvcSigningKey-f1c9a"
+  ]
+}
